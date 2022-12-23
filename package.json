@@ -1,0 +1,21 @@
+{
+  "name": "jsaqa_3_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright"
+  },
+  "author": "",
+  "license": "ISC",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Alla26/JSAutoTestPlaywright-3.git"
+  },
+
+  "devDependencies": {
+    "@playwright/test": "^1.12.3",
+    "playwright": "^1.12.3"
+  }
+}
