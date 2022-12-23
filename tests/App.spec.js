@@ -14,6 +14,7 @@ test("test", async ({ page }) => {
   await page.locator('[placeholder="Пароль"]').fill(user.pass);
 // Click [data-testid="login-submit-btn"]
   await page.locator('[data-testid="login-submit-btn"]').click();
+  await page.screenshot({ path: "screenshot.png" });
 
   await expect(page).toHaveURL('https://netology.ru/profile');
   
@@ -36,5 +37,5 @@ test("not a valid test", async ({ page }) => {
   await page.locator('[data-testid="login-submit-btn"]').click();
   
   await expect(page.locator('[data-testid="login-error-hint"]')).toHaveText('Вы ввели неправильно логин или пароль');
-
+  await page.screenshot({ path: "screenshotError.png" });
 });
